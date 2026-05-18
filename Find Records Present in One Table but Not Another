@@ -1,0 +1,5 @@
+SELECT name
+FROM table1
+EXCEPT
+SELECT name
+FROM table2;

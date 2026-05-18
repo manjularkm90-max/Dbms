@@ -1,0 +1,7 @@
+Delete Duplicate Rows but Keep One
+DELETE FROM students
+WHERE id NOT IN (
+    SELECT MIN(id)
+    FROM students
+    GROUP BY name
+);
